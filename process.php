@@ -14,6 +14,12 @@
 	{
 		add_note();
 	}
+	else //log off or malicious navigation to process.php
+	{
+		session_destroy();
+		header('location: index.php');
+		die();
+	}
 
 	function register_user()
 	{
@@ -93,7 +99,6 @@
 
 	function add_note()
 	{
-		var_dump($_POST);
 		if(isset($_POST['private']))
 		{
 			$private = 1;

@@ -28,5 +28,7 @@
 			echo "<p>". $note['message']. "</p>";
 		}
 	 ?>
+	 <a href="all.php">View other peoples' notes!</a>
+	 <a href="process.php">Logout</a>
 </body>
 </html>
